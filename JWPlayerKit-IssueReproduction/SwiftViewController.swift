@@ -6,9 +6,11 @@
 //
 
 import UIKit
+import JWPlayerKit
 
-class ViewController: UIViewController {
-
+class SwiftViewController: UIViewController {
+    private var playerView = JWPlayerView()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
