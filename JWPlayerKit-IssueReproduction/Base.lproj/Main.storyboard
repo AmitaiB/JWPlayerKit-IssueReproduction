@@ -1,24 +1,165 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="N0Y-dz-LwJ">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--JW Player iOS SDK Demo-->
+        <scene sceneID="fg9-Qy-dkP">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController id="CTn-Cb-KZl" customClass="InitialViewController" customModule="JWPlayer_SDK_iOS_Demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uTg-AQ-2sA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="avF-P7-0R7">
+                                <rect key="frame" x="149.5" y="422.5" width="115" height="105"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rQI-Pm-Axg">
+                                        <rect key="frame" x="0.0" y="0.0" width="115" height="39"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="39" id="T4R-8g-wPW"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <state key="normal" title="  Objective-C  ">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="xG6-Ut-jEQ" kind="show" id="VK9-h4-DvV"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SMU-d5-0aI">
+                                        <rect key="frame" x="0.0" y="66" width="115" height="39"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <state key="normal" title=" Swift ">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="306-fN-sZi" kind="show" id="VZp-MP-r1d"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="rQI-Pm-Axg" firstAttribute="width" secondItem="SMU-d5-0aI" secondAttribute="width" id="09X-V0-Xib"/>
+                                    <constraint firstItem="rQI-Pm-Axg" firstAttribute="height" secondItem="SMU-d5-0aI" secondAttribute="height" id="koD-xC-czO"/>
+                                </constraints>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-15" translatesAutoresizingMaskIntoConstraints="NO" id="3Vu-VR-R5b">
+                                <rect key="frame" x="94.5" y="147" width="225" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="3Vu-VR-R5b" secondAttribute="height" multiplier="15:8" id="FUX-X9-kKd"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="9C6-mU-Tob"/>
+                        <color key="backgroundColor" red="1" green="0.0" blue="0.2888867557" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="3Vu-VR-R5b" firstAttribute="centerX" secondItem="9C6-mU-Tob" secondAttribute="centerX" id="6ce-DC-KYa"/>
+                            <constraint firstItem="avF-P7-0R7" firstAttribute="centerY" secondItem="9C6-mU-Tob" secondAttribute="centerY" id="NMb-xh-1iW"/>
+                            <constraint firstItem="avF-P7-0R7" firstAttribute="centerX" secondItem="9C6-mU-Tob" secondAttribute="centerX" id="Pbe-jC-dWB"/>
+                            <constraint firstItem="3Vu-VR-R5b" firstAttribute="top" secondItem="9C6-mU-Tob" secondAttribute="top" constant="59" id="Ttz-pE-wuS"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="JW Player iOS SDK Demo" id="TZq-MM-eA6"/>
+                    <connections>
+                        <outlet property="objc" destination="rQI-Pm-Axg" id="tC6-mV-8IL"/>
+                        <outlet property="swift" destination="SMU-d5-0aI" id="HdP-Vk-BOf"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G0Y-Oc-ceR" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="934.78260869565224" y="-1.3392857142857142"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="T5k-tr-EZW">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="N0Y-dz-LwJ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="IPr-f8-zvV">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="CTn-Cb-KZl" kind="relationship" relationship="rootViewController" id="1Hw-4t-aSs"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kNg-aZ-zDB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="24.637681159420293" y="-1.3392857142857142"/>
+        </scene>
+        <!--Objective-C Implementation-->
+        <scene sceneID="5H7-kI-9UB">
+            <objects>
+                <viewController id="xG6-Ut-jEQ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="C31-N3-5o5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l2c-q2-mrM">
+                                <rect key="frame" x="0.0" y="96" width="414" height="233"/>
+                                <color key="backgroundColor" red="0.2210149169" green="0.66827517749999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="l2c-q2-mrM" secondAttribute="height" multiplier="16:9" id="lIR-y6-Ehi"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="lVE-pV-RiW"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="l2c-q2-mrM" firstAttribute="top" secondItem="lVE-pV-RiW" secondAttribute="top" constant="8" id="KNX-Uk-DSh"/>
+                            <constraint firstItem="lVE-pV-RiW" firstAttribute="trailing" secondItem="l2c-q2-mrM" secondAttribute="trailing" id="Pje-dd-yPz"/>
+                            <constraint firstItem="l2c-q2-mrM" firstAttribute="leading" secondItem="lVE-pV-RiW" secondAttribute="leading" id="Thu-iU-OOf"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Objective-C Implementation" id="dxr-r0-jln"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkU-u2-sMi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="935" y="720"/>
+        </scene>
+        <!--Swift Implementation-->
+        <scene sceneID="XA9-Px-Oro">
+            <objects>
+                <viewController id="306-fN-sZi" customClass="SwiftViewController" customModule="JWPlayer_SDK_iOS_Demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tpG-LZ-Ap1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gRe-vr-5tJ">
+                                <rect key="frame" x="0.0" y="96" width="414" height="233"/>
+                                <color key="backgroundColor" red="0.95510405300000001" green="0.3443522155" blue="0.20989981290000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="gRe-vr-5tJ" secondAttribute="height" multiplier="16:9" id="2O3-Gf-35d"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="bwz-V0-LqR"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gRe-vr-5tJ" firstAttribute="leading" secondItem="bwz-V0-LqR" secondAttribute="leading" id="deS-NH-QuQ"/>
+                            <constraint firstItem="bwz-V0-LqR" firstAttribute="trailing" secondItem="gRe-vr-5tJ" secondAttribute="trailing" id="eCv-eE-oDf"/>
+                            <constraint firstItem="gRe-vr-5tJ" firstAttribute="top" secondItem="bwz-V0-LqR" secondAttribute="top" constant="8" id="tVO-ED-og5"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Swift Implementation" id="FzW-Td-mdD"/>
+                    <connections>
+                        <outlet property="playerContainerView" destination="gRe-vr-5tJ" id="ud3-47-ZYU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rcu-A6-oA4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1786" y="-1"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="icon-15" width="120" height="120"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

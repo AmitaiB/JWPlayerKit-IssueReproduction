@@ -13,6 +13,7 @@
 		11EC197726B32F3E008E1125 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11EC197526B32F3E008E1125 /* Main.storyboard */; };
 		11EC197926B32F42008E1125 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11EC197826B32F42008E1125 /* Assets.xcassets */; };
 		11EC197C26B32F42008E1125 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11EC197A26B32F42008E1125 /* LaunchScreen.storyboard */; };
+		11EC198426B332A2008E1125 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EC198326B332A2008E1125 /* InitialViewController.swift */; };
 		C4175E96F6B4A953A901F1A4 /* Pods_JWPlayerKit_IssueReproduction.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C82F7EBE4BB510CC3650739 /* Pods_JWPlayerKit_IssueReproduction.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +26,7 @@
 		11EC197826B32F42008E1125 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		11EC197B26B32F42008E1125 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		11EC197D26B32F42008E1125 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11EC198326B332A2008E1125 /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
 		76A015716535DDFCE82E43F0 /* Pods-JWPlayerKit-IssueReproduction.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JWPlayerKit-IssueReproduction.release.xcconfig"; path = "Target Support Files/Pods-JWPlayerKit-IssueReproduction/Pods-JWPlayerKit-IssueReproduction.release.xcconfig"; sourceTree = "<group>"; };
 		7C82F7EBE4BB510CC3650739 /* Pods_JWPlayerKit_IssueReproduction.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JWPlayerKit_IssueReproduction.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6AED35F9C27909F10FA1458 /* Pods-JWPlayerKit-IssueReproduction.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JWPlayerKit-IssueReproduction.debug.xcconfig"; path = "Target Support Files/Pods-JWPlayerKit-IssueReproduction/Pods-JWPlayerKit-IssueReproduction.debug.xcconfig"; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				11EC196F26B32F3E008E1125 /* AppDelegate.swift */,
+				11EC198326B332A2008E1125 /* InitialViewController.swift */,
 				11EC197126B32F3E008E1125 /* SceneDelegate.swift */,
 				11EC197326B32F3E008E1125 /* SwiftViewController.swift */,
 				11EC197526B32F3E008E1125 /* Main.storyboard */,
@@ -208,6 +211,7 @@
 				11EC197426B32F3E008E1125 /* SwiftViewController.swift in Sources */,
 				11EC197026B32F3E008E1125 /* AppDelegate.swift in Sources */,
 				11EC197226B32F3E008E1125 /* SceneDelegate.swift in Sources */,
+				11EC198426B332A2008E1125 /* InitialViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
