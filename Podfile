@@ -6,5 +6,5 @@ target 'JWPlayerKit-IssueReproduction' do
   use_frameworks!
 
   # Pods for JWPlayerKit-IssueReproduction
-
+  pod 'JWPlayerKit'
 end

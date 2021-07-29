@@ -1,0 +1,16 @@
+PODS:
+  - JWPlayerKit (4.0.0)
+
+DEPENDENCIES:
+  - JWPlayerKit
+
+SPEC REPOS:
+  trunk:
+    - JWPlayerKit
+
+SPEC CHECKSUMS:
+  JWPlayerKit: e484a07119faca8e5014c5c77275a226d7ba6d7f
+
+PODFILE CHECKSUM: 5145c087aaf3713876f1e12b95463def11b02f4e
+
+COCOAPODS: 1.10.1

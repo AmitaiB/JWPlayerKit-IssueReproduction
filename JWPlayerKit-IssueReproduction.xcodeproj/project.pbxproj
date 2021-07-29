@@ -13,6 +13,7 @@
 		11EC197726B32F3E008E1125 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11EC197526B32F3E008E1125 /* Main.storyboard */; };
 		11EC197926B32F42008E1125 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11EC197826B32F42008E1125 /* Assets.xcassets */; };
 		11EC197C26B32F42008E1125 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11EC197A26B32F42008E1125 /* LaunchScreen.storyboard */; };
+		C4175E96F6B4A953A901F1A4 /* Pods_JWPlayerKit_IssueReproduction.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C82F7EBE4BB510CC3650739 /* Pods_JWPlayerKit_IssueReproduction.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,9 @@
 		11EC197826B32F42008E1125 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		11EC197B26B32F42008E1125 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		11EC197D26B32F42008E1125 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		76A015716535DDFCE82E43F0 /* Pods-JWPlayerKit-IssueReproduction.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JWPlayerKit-IssueReproduction.release.xcconfig"; path = "Target Support Files/Pods-JWPlayerKit-IssueReproduction/Pods-JWPlayerKit-IssueReproduction.release.xcconfig"; sourceTree = "<group>"; };
+		7C82F7EBE4BB510CC3650739 /* Pods_JWPlayerKit_IssueReproduction.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JWPlayerKit_IssueReproduction.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6AED35F9C27909F10FA1458 /* Pods-JWPlayerKit-IssueReproduction.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JWPlayerKit-IssueReproduction.debug.xcconfig"; path = "Target Support Files/Pods-JWPlayerKit-IssueReproduction/Pods-JWPlayerKit-IssueReproduction.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4175E96F6B4A953A901F1A4 /* Pods_JWPlayerKit_IssueReproduction.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				11EC196E26B32F3E008E1125 /* JWPlayerKit-IssueReproduction */,
 				11EC196D26B32F3E008E1125 /* Products */,
+				12E03EE58320AC661BFC3EB8 /* Pods */,
+				79675AD265A036AC5CA27949 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,24 @@
 			path = "JWPlayerKit-IssueReproduction";
 			sourceTree = "<group>";
 		};
+		12E03EE58320AC661BFC3EB8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A6AED35F9C27909F10FA1458 /* Pods-JWPlayerKit-IssueReproduction.debug.xcconfig */,
+				76A015716535DDFCE82E43F0 /* Pods-JWPlayerKit-IssueReproduction.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		79675AD265A036AC5CA27949 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7C82F7EBE4BB510CC3650739 /* Pods_JWPlayerKit_IssueReproduction.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 11EC198026B32F42008E1125 /* Build configuration list for PBXNativeTarget "JWPlayerKit-IssueReproduction" */;
 			buildPhases = (
+				BB60967F226EBF75A5774925 /* [CP] Check Pods Manifest.lock */,
 				11EC196826B32F3E008E1125 /* Sources */,
 				11EC196926B32F3E008E1125 /* Frameworks */,
 				11EC196A26B32F3E008E1125 /* Resources */,
+				1FBC383C063EC6DB3C1CF0A9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1FBC383C063EC6DB3C1CF0A9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JWPlayerKit-IssueReproduction/Pods-JWPlayerKit-IssueReproduction-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JWPlayerKit-IssueReproduction/Pods-JWPlayerKit-IssueReproduction-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JWPlayerKit-IssueReproduction/Pods-JWPlayerKit-IssueReproduction-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BB60967F226EBF75A5774925 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JWPlayerKit-IssueReproduction-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		11EC196826B32F3E008E1125 /* Sources */ = {
@@ -283,6 +352,7 @@
 		};
 		11EC198126B32F42008E1125 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6AED35F9C27909F10FA1458 /* Pods-JWPlayerKit-IssueReproduction.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +372,7 @@
 		};
 		11EC198226B32F42008E1125 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76A015716535DDFCE82E43F0 /* Pods-JWPlayerKit-IssueReproduction.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
