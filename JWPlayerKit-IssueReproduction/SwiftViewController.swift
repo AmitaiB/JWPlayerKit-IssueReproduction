@@ -22,7 +22,7 @@ class SwiftViewController: UIViewController {
             
             let config = try JWPlayerConfigurationBuilder()
                 .playlist([item])
-                .autostart(true)
+//                .autostart(true)
                 .build()
             playerView.player.configurePlayer(with: config)
         }
