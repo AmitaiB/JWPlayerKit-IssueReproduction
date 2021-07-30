@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  SwiftPlayerViewController.swift
 //  JWPlayerKit-IssueReproduction
 //
 //  Created by Amitai Blickstein on 7/29/21.
@@ -8,10 +8,8 @@
 import UIKit
 import JWPlayerKit
 
-class SwiftViewController: UIViewController {
-    @IBOutlet var playerContainerView: UIView!
-    private var playerView = JWPlayerView()
-    
+class SwiftPlayerViewController: JWPlayerViewController {
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -24,19 +22,8 @@ class SwiftViewController: UIViewController {
                 .playlist([item])
                 .autostart(true)
                 .build()
+            
             playerView.player.configurePlayer(with: config)
-        }
-        catch {print(error.localizedDescription)}
-        
-        title = "JWP SDK ver: \(JWPlayerKitVersionNumber)"
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        
-        playerContainerView.addSubview(playerView)
-        playerView.constrainToSuperview()
-        
+        } catch {print(error.localizedDescription)}
     }
 }
-

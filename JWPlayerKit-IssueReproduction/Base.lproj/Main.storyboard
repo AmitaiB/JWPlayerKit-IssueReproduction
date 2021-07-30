@@ -137,12 +137,24 @@
                                     <constraint firstAttribute="width" secondItem="gRe-vr-5tJ" secondAttribute="height" multiplier="16:9" id="2O3-Gf-35d"/>
                                 </constraints>
                             </view>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vde-Fs-m3f">
+                                <rect key="frame" x="0.0" y="449" width="414" height="233"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Vde-Fs-m3f" secondAttribute="height" multiplier="16:9" id="KbT-Ds-Sfp"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="Ntu-pM-ELo" kind="embed" id="jcl-sR-2pV"/>
+                                </connections>
+                            </containerView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="bwz-V0-LqR"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="bwz-V0-LqR" firstAttribute="bottom" secondItem="Vde-Fs-m3f" secondAttribute="bottom" constant="180" id="NUE-KG-SXW"/>
                             <constraint firstItem="gRe-vr-5tJ" firstAttribute="leading" secondItem="bwz-V0-LqR" secondAttribute="leading" id="deS-NH-QuQ"/>
                             <constraint firstItem="bwz-V0-LqR" firstAttribute="trailing" secondItem="gRe-vr-5tJ" secondAttribute="trailing" id="eCv-eE-oDf"/>
+                            <constraint firstItem="Vde-Fs-m3f" firstAttribute="leading" secondItem="bwz-V0-LqR" secondAttribute="leading" id="gsC-la-3yx"/>
+                            <constraint firstItem="bwz-V0-LqR" firstAttribute="trailing" secondItem="Vde-Fs-m3f" secondAttribute="trailing" id="nEw-Pf-cMm"/>
                             <constraint firstItem="gRe-vr-5tJ" firstAttribute="top" secondItem="bwz-V0-LqR" secondAttribute="top" constant="8" id="tVO-ED-og5"/>
                         </constraints>
                     </view>
@@ -154,6 +166,20 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rcu-A6-oA4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1786" y="-1"/>
+        </scene>
+        <!--Swift Player View Controller-->
+        <scene sceneID="n9m-xH-i27">
+            <objects>
+                <viewController id="Ntu-pM-ELo" customClass="SwiftPlayerViewController" customModule="JWPlayerKit_IssueReproduction" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FxE-FH-FRW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="233"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2GA-Tt-aIZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2572" y="-1"/>
         </scene>
     </scenes>
     <resources>
