@@ -37,8 +37,8 @@ class SwiftViewController: UIViewController {
                 .playlist(playlist)
                 .autostart(true)
                 .build()
-            playerView.player.configurePlayer(with: config)
             playerView.player.contentKeyDataSource = DRMContentDecryptionKeyDataSource.shared
+            playerView.player.configurePlayer(with: config)
             playerView.player.delegate = self
         }
         catch {print(error.localizedDescription)}
