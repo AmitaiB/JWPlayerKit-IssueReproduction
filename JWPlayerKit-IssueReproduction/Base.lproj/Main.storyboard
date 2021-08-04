@@ -11,16 +11,16 @@
         <!--JW Player iOS SDK Demo-->
         <scene sceneID="fg9-Qy-dkP">
             <objects>
-                <viewController id="CTn-Cb-KZl" customClass="InitialViewController" customModule="JWPlayer_SDK_iOS_Demo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="CTn-Cb-KZl" customClass="InitialViewController" customModule="JWPlayerKit_IssueReproduction" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uTg-AQ-2sA">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="avF-P7-0R7">
-                                <rect key="frame" x="149.5" y="422.5" width="115" height="105"/>
+                                <rect key="frame" x="101" y="389.5" width="212" height="171"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rQI-Pm-Axg">
-                                        <rect key="frame" x="0.0" y="0.0" width="115" height="39"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="212" height="39"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="39" id="T4R-8g-wPW"/>
                                         </constraints>
@@ -33,7 +33,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SMU-d5-0aI">
-                                        <rect key="frame" x="0.0" y="66" width="115" height="39"/>
+                                        <rect key="frame" x="0.0" y="66" width="212" height="39"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <state key="normal" title=" Swift ">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -42,9 +42,21 @@
                                             <segue destination="306-fN-sZi" kind="show" id="VZp-MP-r1d"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IFa-RK-geM">
+                                        <rect key="frame" x="0.0" y="132" width="212" height="39"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <state key="normal" title="  JWViewPlayerController  ">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="rPR-XS-xkl" kind="show" id="UN7-sh-zVk"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="rQI-Pm-Axg" firstAttribute="width" secondItem="SMU-d5-0aI" secondAttribute="width" id="09X-V0-Xib"/>
+                                    <constraint firstItem="SMU-d5-0aI" firstAttribute="height" secondItem="IFa-RK-geM" secondAttribute="height" id="4Gt-cG-7rv"/>
+                                    <constraint firstItem="SMU-d5-0aI" firstAttribute="width" secondItem="IFa-RK-geM" secondAttribute="width" id="CRt-Lz-POe"/>
                                     <constraint firstItem="rQI-Pm-Axg" firstAttribute="height" secondItem="SMU-d5-0aI" secondAttribute="height" id="koD-xC-czO"/>
                                 </constraints>
                             </stackView>
@@ -66,6 +78,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="JW Player iOS SDK Demo" id="TZq-MM-eA6"/>
                     <connections>
+                        <outlet property="jwvpc" destination="IFa-RK-geM" id="Tih-7r-bg3"/>
                         <outlet property="objc" destination="rQI-Pm-Axg" id="tC6-mV-8IL"/>
                         <outlet property="swift" destination="SMU-d5-0aI" id="HdP-Vk-BOf"/>
                     </connections>
@@ -77,7 +90,7 @@
         <!--Navigation Controller-->
         <scene sceneID="T5k-tr-EZW">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="N0Y-dz-LwJ" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" hidesBarsOnTap="YES" id="N0Y-dz-LwJ" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="IPr-f8-zvV">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -120,12 +133,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkU-u2-sMi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="935" y="720"/>
+            <point key="canvasLocation" x="457" y="726"/>
         </scene>
         <!--Swift Implementation-->
         <scene sceneID="XA9-Px-Oro">
             <objects>
-                <viewController id="306-fN-sZi" customClass="SwiftViewController" customModule="JWPlayer_SDK_iOS_Demo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="306-fN-sZi" customClass="SwiftViewController" customModule="JWPlayerKit_IssueReproduction" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tpG-LZ-Ap1">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -174,12 +187,29 @@
                     <view key="view" contentMode="scaleToFill" id="FxE-FH-FRW">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="233"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="ehN-2L-Ob0"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2GA-Tt-aIZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2572" y="-1"/>
+        </scene>
+        <!--Swift Player View Controller-->
+        <scene sceneID="Uwv-7E-OfT">
+            <objects>
+                <viewController id="rPR-XS-xkl" customClass="SwiftPlayerViewController" customModule="JWPlayerKit_IssueReproduction" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="smO-QJ-5qz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="8AN-v1-Y4y"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Oep-kG-J8c"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zcx-sV-eSH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1452" y="726"/>
         </scene>
     </scenes>
     <resources>

@@ -11,12 +11,14 @@ import UIKit
 class InitialViewController: UIViewController {
     @IBOutlet weak var objc: UIButton!
     @IBOutlet weak var swift: UIButton!
+    @IBOutlet weak var jwvpc: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         addBorder(to: objc)
         addBorder(to: swift)
+        addBorder(to: jwvpc)
     }
     
     private func addBorder(to button: UIButton?) {
