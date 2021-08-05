@@ -90,7 +90,8 @@
         <!--Navigation Controller-->
         <scene sceneID="T5k-tr-EZW">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" hidesBarsOnTap="YES" id="N0Y-dz-LwJ" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" hidesBarsWhenVerticallyCompact="YES" id="N0Y-dz-LwJ" sceneMemberID="viewController">
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="IPr-f8-zvV">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
