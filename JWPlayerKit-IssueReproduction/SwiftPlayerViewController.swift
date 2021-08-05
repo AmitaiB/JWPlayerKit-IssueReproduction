@@ -23,7 +23,24 @@ class SwiftPlayerViewController: JWPlayerViewController {
                 .autostart(true)
                 .build()
             
+            player.delegate = self
             playerView.player.configurePlayer(with: config)
+            
         } catch {print(error.localizedDescription)}
+    }
+    
+    override func jwplayer(_ player: JWPlayer, didPauseWithReason reason: JWPauseReason) {
+        super.jwplayer(player, didPauseWithReason: reason)
+        print(#function, "reason: \(reason.description)")
+    }
+    
+    override func jwplayer(_ player: JWPlayer, isPlayingWithReason reason: JWPlayReason) {
+        super.jwplayer(player, isPlayingWithReason: reason)
+        print(#function, "reason: \(reason.description)")
+    }
+    
+    override func jwplayer(_ player: JWPlayer, willPlayWithReason reason: JWPlayReason) {
+        super.jwplayer(player, willPlayWithReason: reason)
+        print(#function, "reason: \(reason.description)")
     }
 }
