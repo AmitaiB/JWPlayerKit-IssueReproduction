@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1110494B26B4945E00E73888 /* SecureKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1110494A26B4945E00E73888 /* SecureKeys.swift */; };
+		11C5CDFD26BC93EF007BA3C9 /* JWPlayerKit+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C5CDFC26BC93EF007BA3C9 /* JWPlayerKit+Extensions.swift */; };
 		11EC197026B32F3E008E1125 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EC196F26B32F3E008E1125 /* AppDelegate.swift */; };
 		11EC197226B32F3E008E1125 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EC197126B32F3E008E1125 /* SceneDelegate.swift */; };
 		11EC197426B32F3E008E1125 /* SwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EC197326B32F3E008E1125 /* SwiftViewController.swift */; };
@@ -22,6 +23,7 @@
 
 /* Begin PBXFileReference section */
 		1110494A26B4945E00E73888 /* SecureKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecureKeys.swift; sourceTree = "<group>"; };
+		11C5CDFC26BC93EF007BA3C9 /* JWPlayerKit+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JWPlayerKit+Extensions.swift"; sourceTree = "<group>"; };
 		11EC196C26B32F3E008E1125 /* JWPlayerKit-IssueReproduction.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "JWPlayerKit-IssueReproduction.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		11EC196F26B32F3E008E1125 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		11EC197126B32F3E008E1125 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 				11EC197326B32F3E008E1125 /* SwiftViewController.swift */,
 				11EC198826B3412C008E1125 /* SwiftPlayerViewController.swift */,
 				11EC198526B33A21008E1125 /* UIKit+Extensions.swift */,
+				11C5CDFC26BC93EF007BA3C9 /* JWPlayerKit+Extensions.swift */,
 				11EC197526B32F3E008E1125 /* Main.storyboard */,
 				11EC197826B32F42008E1125 /* Assets.xcassets */,
 				11EC197A26B32F42008E1125 /* LaunchScreen.storyboard */,
@@ -217,6 +220,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11C5CDFD26BC93EF007BA3C9 /* JWPlayerKit+Extensions.swift in Sources */,
 				11EC197426B32F3E008E1125 /* SwiftViewController.swift in Sources */,
 				1110494B26B4945E00E73888 /* SecureKeys.swift in Sources */,
 				11EC198926B3412C008E1125 /* SwiftPlayerViewController.swift in Sources */,
