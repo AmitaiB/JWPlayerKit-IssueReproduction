@@ -15,7 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-        
+        #warning("Did you set your license key?")
         JWPlayerKitLicense.setLicenseKey(Secure.Keys.v4LicenseKey)
         
         

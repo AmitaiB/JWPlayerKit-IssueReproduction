@@ -8,7 +8,7 @@
 import UIKit
 import JWPlayerKit
 
-class SwiftViewController: UIViewController {
+class SwiftChildViewController: UIViewController {
     @IBOutlet var playerContainerView: UIView!
     private var playerView = JWPlayerView()
     
@@ -17,7 +17,10 @@ class SwiftViewController: UIViewController {
         
         do {
             let item = try JWPlayerItemBuilder()
-                .file(URL(string: "http://content.bitsontherun.com/videos/3XnJSIm4-injeKYZS.mp4")!)
+                .file(URL(string:
+//                            "http://content.bitsontherun.com/videos/3XnJSIm4-injeKYZS.mp4"
+                          "https://content.jwplatform.com/videos/Rdo9succ-LuOJks2a.mp4"
+                         )!)
                 .build()
             
             let config = try JWPlayerConfigurationBuilder()
@@ -26,7 +29,8 @@ class SwiftViewController: UIViewController {
                 .build()
             playerView.player.configurePlayer(with: config)
             
-            playerView.player.playbackStateDelegate = self
+//            playerView.player.playbackStateDelegate = self
+            playerView.player.delegate = self
         }
         catch {print(error.localizedDescription)}
         
@@ -38,11 +42,36 @@ class SwiftViewController: UIViewController {
         
         playerContainerView.addSubview(playerView)
         playerView.constrainToSuperview()
-        
     }
 }
 
-extension SwiftViewController: JWPlayerStateDelegate {
+extension SwiftChildViewController: JWPlayerDelegate {
+    func jwplayerIsReady(_ player: JWPlayer) {
+        print(#file, #function)
+    }
+    
+    func jwplayer(_ player: JWPlayer, failedWithError code: UInt, message: String) {
+        print(#function)
+    }
+    
+    func jwplayer(_ player: JWPlayer, failedWithSetupError code: UInt, message: String) {
+        print(#function)
+    }
+    
+    func jwplayer(_ player: JWPlayer, encounteredWarning code: UInt, message: String) {
+        print(#function)
+    }
+    
+    func jwplayer(_ player: JWPlayer, encounteredAdWarning code: UInt, message: String) {
+        print(#function)
+    }
+    
+    func jwplayer(_ player: JWPlayer, encounteredAdError code: UInt, message: String) {
+        print(#function)
+    }
+}
+
+extension SwiftChildViewController: JWPlayerStateDelegate {
     func jwplayerHasSeeked(_ player: JWPlayer) {
         print(#function)
     }
@@ -76,7 +105,8 @@ extension SwiftViewController: JWPlayerStateDelegate {
     }
     
     func jwplayer(_ player: JWPlayer, didLoadPlaylist playlist: [JWPlayerItem]) {
-        print(#function)
+        print(#file, #function)
+        player.play()
     }
     
     func jwplayer(_ player: JWPlayer, didPauseWithReason reason: JWPauseReason) {

@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="N0Y-dz-LwJ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="N0Y-dz-LwJ">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -17,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="avF-P7-0R7">
-                                <rect key="frame" x="101" y="389.5" width="212" height="171"/>
+                                <rect key="frame" x="101" y="365" width="212" height="171"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rQI-Pm-Axg">
                                         <rect key="frame" x="0.0" y="0.0" width="212" height="39"/>
@@ -90,14 +91,18 @@
         <!--Navigation Controller-->
         <scene sceneID="T5k-tr-EZW">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" hidesBarsWhenVerticallyCompact="YES" id="N0Y-dz-LwJ" sceneMemberID="viewController">
-                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" toolbarHidden="NO" hidesBarsWhenVerticallyCompact="YES" id="N0Y-dz-LwJ" sceneMemberID="viewController">
+                    <extendedEdge key="edgesForExtendedLayout"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="IPr-f8-zvV">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="rGW-oL-S3R">
+                        <rect key="frame" x="0.0" y="813" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
                         <segue destination="CTn-Cb-KZl" kind="relationship" relationship="rootViewController" id="1Hw-4t-aSs"/>
                     </connections>
@@ -152,7 +157,7 @@
                                 </constraints>
                             </view>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vde-Fs-m3f">
-                                <rect key="frame" x="0.0" y="449" width="414" height="233"/>
+                                <rect key="frame" x="0.0" y="400" width="414" height="233"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Vde-Fs-m3f" secondAttribute="height" multiplier="16:9" id="KbT-Ds-Sfp"/>
                                 </constraints>
@@ -201,11 +206,12 @@
             <objects>
                 <viewController id="rPR-XS-xkl" customClass="SwiftPlayerViewController" customModule="JWPlayerKit_IssueReproduction" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="smO-QJ-5qz">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="8AN-v1-Y4y"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
                     <navigationItem key="navigationItem" id="Oep-kG-J8c"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zcx-sV-eSH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
