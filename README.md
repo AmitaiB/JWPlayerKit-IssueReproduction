@@ -14,5 +14,4 @@ Or feel free to change how you enter your license key. :)
 
 ### Change Log
 Demos include:
-* DRM
-* 
+_not up to date_
